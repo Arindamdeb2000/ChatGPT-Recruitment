@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat GPT in Recruitment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slide" id="slide1">
+        <h2>Chat GPT in Recruitment</h2>
+        <p>Transforming the Hiring Process with AI</p>
+    </div>
+
+    <div class="slide" id="slide2">
+        <h2>Slide 2: Introduction</h2>
+        <p>Welcome to our presentation on leveraging Chat GPT for Recruitment.</p>
+    </div>
+
+    <div class="slide" id="slide3">
+        <h2>Slide 3: What is Chat GPT?</h2>
+        <p>Chat GPT is a powerful language model developed by OpenAI, capable of generating human-like text responses.</p>
+    </div>
+
+    <div class="slide" id="slide4">
+        <h2>Slide 4: Recruitment Challenges</h2>
+        <p>Explore the common challenges in the recruitment process: time-consuming, repetitive tasks, and candidate engagement.</p>
+    </div>
+
+    <div class="slide" id="slide5">
+        <h2>Slide 5: How Chat GPT Helps</h2>
+        <p>Chat GPT streamlines recruitment by automating responses, answering FAQs, and engaging candidates in real-time conversations.</p>
+    </div>
+
+    <div class="slide" id="slide6">
+        <h2>Slide 6: Personalized Candidate Interaction</h2>
+        <p>Enable personalized communication with candidates, providing a positive and interactive experience.</p>
+    </div>
+
+    <div class="slide" id="slide7">
+        <h2>Slide 7: Improved Candidate Screening</h2>
+        <p>Utilize Chat GPT to assist in initial candidate screening, saving time and resources in the hiring process.</p>
+    </div>
+
+    <div class="slide" id="slide8">
+        <h2>Slide 8: Real-time Assistance</h2>
+        <p>Offer real-time support to candidates, addressing queries and concerns promptly.</p>
+    </div>
+
+    <div class="slide" id="slide9">
+        <h2>Slide 9: Data-driven Decision Making</h2>
+        <p>Leverage Chat GPT's ability to analyze large datasets for better decision-making and recruitment strategy.</p>
+    </div>
+
+    <div class="slide" id="slide10">
+        <h2>Slide 10: Conclusion</h2>
+        <p>Incorporating Chat GPT into your recruitment process can revolutionize the way you find and engage with top talent.</p>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.slide').forEach(slide => slide.style.display = 'none');
+            document.getElementById(`slide${slideNumber}`).style.display = 'block';
+            currentSlide = slideNumber;
+        }
+
+        function nextSlide() {
+            if (currentSlide < 10) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(1);
+        });
+    </script>
+
+</body>
+
+</html>
